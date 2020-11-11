@@ -1,22 +1,21 @@
 package sec01_inheritancepolymorphism.EX01_Inheritance;
 
+/*클래스의 상속과 사용가능한 멤버*/
+
 class Human {
 	String name;
 	int age;
 	void eat() {}
 	void sleep() {}
 }
-
 class Student extends Human {
 	int studentID;
 	void goToSchool() {}
 }
-
 class Worker extends Human {
 	int workerID;
 	void goToWork() {}
 }
-
 public class Inheritance {
 	public static void main(String[] args) {
 		//#1. Human 객체 생성

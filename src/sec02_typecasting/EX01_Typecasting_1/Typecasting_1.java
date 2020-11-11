@@ -1,5 +1,7 @@
 package sec02_typecasting.EX01_Typecasting_1;
 
+/*클래스의 업캐스팅 및 다운캐스팅*/
+
 //# 클래스의 상속관계
 class A {}
 class B extends A{}
@@ -7,8 +9,7 @@ class C extends B{}
 class D extends B{}
 
 public class Typecasting_1 {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		//#1. 업캐스팅 (자동변환): 생략시 컴파일러가 자동 추가
 		A ac = (A)new C(); // C->A 업캐스팅 (자동변환)
 		B bc = (B)new C(); // C->B 업캐스팅 (자동변환)
@@ -31,7 +32,6 @@ public class Typecasting_1 {
 		
 		A ad = new D();
 		B b1 = (B)ad; //A->B 다운캐스팅 (수동변환)
-		D d1 = (D)ad; //A->D 다운캐스팅 (수동변환)
-				
+		D d1 = (D)ad; //A->D 다운캐스팅 (수동변환)				
 	}
 }

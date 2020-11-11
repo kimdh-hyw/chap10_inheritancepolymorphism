@@ -1,5 +1,7 @@
 package sec01_inheritancepolymorphism.EX02_Polymorphism;
 
+/*상속을 통한 객체의 다형적 표현*/
+
 //상속관계 만들기
 class A {}
 class B extends A{}
@@ -7,8 +9,7 @@ class C extends B{}
 class D extends B{}
 
 public class Polymorphism {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		//#1. A 타입의 다형적 표현
 		A a1 = new A(); //A는 A이다. O		 
 		A a2 = new B(); //B는 A이다. O
@@ -31,8 +32,7 @@ public class Polymorphism {
 //		D d1 = new A(); //A는  D이다. X
 //		D d2 = new B(); //B는  D이다. X
 //		D d3 = new C(); //C는  D이다. X
-		D d4 = new D(); //D는  D이다. O
-				
+		D d4 = new D(); //D는  D이다. O				
 	}
 }
 

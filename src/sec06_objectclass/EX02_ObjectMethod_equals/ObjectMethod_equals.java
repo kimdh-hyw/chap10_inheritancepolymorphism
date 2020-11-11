@@ -1,12 +1,13 @@
 package sec06_objectclass.EX02_ObjectMethod_equals;
 
+/*Object 클래스의 equals(.) 메서드*/
+
 class A{
 	String name;
 	A(String name){
 		this.name = name;
 	}
 }
-
 class B{
 	String name;
 	B(String name){
@@ -20,10 +21,8 @@ class B{
 			return false;
 	}	
 }
-
 public class ObjectMethod_equals {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		A a1 = new A("안녕");
 		A a2 = new A("안녕");
 		
@@ -35,8 +34,7 @@ public class ObjectMethod_equals {
 		B b2 = new B("안녕");
 		
 		System.out.println(b1==b2); //false
-		System.out.println(b1.equals(b2));//true
-		
+		System.out.println(b1.equals(b2));//true		
 	}
 }
 

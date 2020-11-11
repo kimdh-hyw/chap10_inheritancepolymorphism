@@ -1,15 +1,14 @@
 package sec04_overlapmember.EX01_OverlapInstanceField;
 
+/*인스턴스 필드의 중복*/
+
 class A {
 	int m = 3;
 }
-
 class B extends A {
 	int m = 4;
 }
-
-public class OverlapInstanceField {
-	
+public class OverlapInstanceField {	
 	public static void main(String[] args) {
 		//#1. 객체생성
 		A aa = new A();
